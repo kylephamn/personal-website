@@ -1,0 +1,201 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d8e2dc, #f0f4ef);
+    color: #4a4a4a;
+}
+
+header {
+    background-color: #a8c686;
+    color: #f7f7f7;
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: none;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #d8e2dc;
+}
+
+h1, h2 {
+    color: #495e2d;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+nav ul li a:hover {
+    color: #d8e2dc;
+}
+
+.about-picture {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; 
+    border: 3px solid #a8c686; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: block;
+    margin: 1em auto; 
+}
+
+.image-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideshow 9s infinite ease-in-out;
+}
+
+/* Set a delay for each image to appear sequentially */
+.image-slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.image-slideshow img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.image-slideshow img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+/* Keyframes for the slideshow animation */
+@keyframes slideshow {
+    0% { opacity: 1; }
+    33% { opacity: 1; }
+    66% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+#experience, #projects, #contact, #skills {
+    background-color: transparent;
+    border: none;
+    margin: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #d8e2dc;
+    text-align: center;
+}
+
+#skills {
+    background-color: transparent;
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* White background for each individual skills entry */
+#skills .skills {
+    background-color: #fff;
+    border: 1px solid #d8e2dc;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headers and paragraphs within each skills card */
+#skills .skills h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+#skills .skills p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #6d6d6d;
+}
+
+#skills .skills p strong {
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+/* Hover effect for each skills card */
+#skills .skills:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.contact a {
+    font-size: 1.5em;
+    color: #4a4a4a;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #a8c686;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact a {
+        margin: 0.5em 0;
+    }
+
+    #skills {
+        padding: 1em;
+    }
+    #skills .skills {
+        padding: 1em;
+        max-width: 100%;
+    }
+}
