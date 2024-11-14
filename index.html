@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="hobbies.css">
     <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
     
 </head>
 <body>
+    <button id="back-to-top">↑</button>
+    
     <header>
         <h1>Kyle N. Pham</h1>
         <nav>
@@ -32,7 +36,7 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <img src="images/about-me.jpg" alt="My Picture" class="about-picture">
         <h2>Hello!</h2>
         <p>My name is Kyle! I am a 3rd year Computer Science Major at Colorado State University concentrating in Software Engineering!
@@ -43,7 +47,7 @@
         </p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="fade-in">
         <h2>Professional Work Experience</h2>
         <div class="experience">
             <h3>Flight Software Engineering Intern</h3>
@@ -116,7 +120,7 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade-in">
         <h2>Projects</h2>
         <div class="project">
             <h3>Pokéfinder</h3>
@@ -173,7 +177,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="fade-in">
         <h2>Skills</h2>
         <div class="skills">
             <h3>Programming Languages</h3>
@@ -210,7 +214,7 @@
         </div>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <h2>Contact</h2>
         <div class="contact">
             <a href="https://www.linkedin.com/in/kylephamn/" target="_blank" rel="noopener noreferrer">
@@ -225,10 +229,13 @@
             <a href="https://github.com/kylephamn" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
+            <a href="images/resume.pdf" target="_blank">
+                <i class="fa fa-file" aria-hidden="true"></i>
+            </a>
         </div>
     </section>
 
-    <script src="script.js" defer></script>
+
 
 </body>
 </html>

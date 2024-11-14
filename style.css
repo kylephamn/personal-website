@@ -170,11 +170,45 @@ section {
 .contact a {
     font-size: 1.5em;
     color: #4a4a4a;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact a:hover {
     color: #a8c686;
+    transform: scale(1.1); 
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px; /* Set width and height to the same value for a circle */
+    height: 40px;
+    background-color: #a8c686;
+    color: #fff;
+    border-radius: 50%; /* Makes the button perfectly round */
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px; /* Centers the arrow vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+#back-to-top:hover {
+    background-color: #87b57d; /* Optional hover color */
 }
 
 /* Mobile Responsiveness */
