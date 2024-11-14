@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,6 +94,26 @@
                 Promoting student success by refering students to resources to get assistance in many disciplines.
             </p>
         </div>
+        <div class="experience">
+            <h3>Korean Teaching Assistant</h3>
+            <h4>Colorado State University LKOR100</h4>
+            <span class="experience-date">October 2023 - Dec 2023</span>
+            <p>
+                Supported the learning experience for <strong>50+</strong> students in a Korean language class by providing timely constructive verbal and written guidance. <br>
+                Actively engaged with students, addressing questions and concerns related to the course material, fostering supportive learning environment. 
+            </p>
+        </div>
+        <div class="experience">
+            <h3>Front of House Team Member</h3>
+            <h4>Chick-Fil-A</h4>
+            <span class="experience-date">March 2022 - July 2024</span>
+            <p>
+                Provided 2nd-mile service for <strong>400+</strong> guests quickly and accurately. <br>
+                Defused conflicts and foster a positive work atmosphere. <br>
+                Assisted in troubleshooting technical errors to provide 2nd-mile guest service. <br>
+                Quickly adapted to fast-paced work environment with an insignificant margin of error. <br>
+            </p>
+        </div>
     </section>
 
     <section id="projects">
@@ -103,7 +125,7 @@
             <p><strong>Languages:</strong> Python3</p>
             <p><strong>Software and Frameworks: </strong>Tkinter & Pillow Libraries and APIs</p>
             <p>Integrated <strong>open-source APIs </strong>to fetch and display Pokémon sprites alongside comprehensive stats within the application interface. <br>
-                Developed a GUI-based application using <strong> Python Tkinter library</strong> to manage and retrieve 1000+ Pokémon data entries efficiently
+                Developed a GUI-based application using <strong> Python Tkinter library</strong> to manage and retrieve 1000+ Pokémon data entries efficiently.
             </p>
         </div>
         <div class="project">
@@ -133,10 +155,20 @@
             <h3>Society of Asian Scientists and Engineers CSU Website</h3>
             <span class="project-date">October 2024</span>
             <p><strong>Languages:</strong> HTML5/CSS & JavaScript</p>
-            <p><strong>Software and Frameworks: </strong>Node.JS, GitHub Codespaces, React, & VS Code Live Server</p>
-            <p> Developed a UX-friendly front-end application for efficient task organization and management <br>
-                Accelerated development timeline by using Node.JS and VS Live Server to visualize improvements in real-time <br>
-                Optimized  data retrieval to display board officers and chapter picture gallery
+            <p><strong>Software and Frameworks: </strong>Node.JS, GitHub Codespaces, React, & VS Code Live Server.</p>
+            <p> Developed a UX-friendly front-end application for efficient task organization and management. <br>
+                Accelerated development timeline by using Node.JS and VS Live Server to visualize improvements in real-time. <br>
+                Optimized  data retrieval to display board officers and chapter picture gallery.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Color Detection App</h3>
+            <span class="project-date">October 2024</span>
+            <p><strong>Languages:</strong> Python3 </p>
+            <p><strong>Software and Frameworks: </strong>React Native, Bootstrap, Responsive Design, NumPy, Pillow Image, & Threading module </p>
+            <p> Allow users to capture images and extract selected colors to identify via Hexcode ID using an API. <br>
+                Used Augmented Reality implementations to overlay color information directly onto the display. <br>
+                Optimized image processing algorithms for better performance and to reduce resource usage. 
             </p>
         </div>
     </section>
@@ -153,7 +185,7 @@
                 Linux, Windows, MacOS, LAN, Node.JS, PyCharm, <br> 
                 Jupyter Notebook, Excel, Microsoft Visio, Jamovi, VMWare, Machine Clustering, 
                 PandaLib, NumPy, 
-                WinSCP, Windows Remote Desktop,  GUI (Tkinter), & Application Programming Interfaces (APIs), Eigen Lib
+                WinSCP, Windows Remote Desktop,  GUI (Tkinter), Application Programming Interfaces (APIs), Eigen Lib, Threading module, 
             </p>
 
         </div>
@@ -187,12 +219,16 @@
             <a href="mailto:kylepham.n@gmail.com">
                 <i class="fas fa-envelope"></i>
             </a>
+            <a href="tel: 346-232-1580">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
             <a href="https://github.com/kylephamn" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
 </body>
 </html>
